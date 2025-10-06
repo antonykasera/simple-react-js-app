@@ -33,8 +33,8 @@
   cursor: pointer;
   text-align: center;
   opacity: 0;
-  padding-top:70%;
-  transition:0.4s;
+  padding-top: 70%;
+  transition: 0.4s;
 }
 
 .caption img {
@@ -42,7 +42,18 @@
   margin-bottom: 10px;
 }
 
-.program:hover .caption{
-    opacity: 1;
-    padding-top:0%;
+.program:hover .caption {
+  opacity: 1;
+  padding-top: 0%;
+}
+
+/* Media query */
+@media (max-width: 650px) {
+  .programs {
+    flex-direction: column;
+  }
+  .program {
+    flex-basis: 100%;
+    margin: 20px;
+  }
 }
