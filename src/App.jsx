@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./components/Navbar/navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Programs from "./components/programs/Programs";
 import Title from "./components/Title/Title";
@@ -17,6 +17,7 @@ const App = () => {
     <div>
       <div className="nav-bar">
         <Navbar />
+        
       </div>
 
       <Hero />
