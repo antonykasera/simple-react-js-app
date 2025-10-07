@@ -32,7 +32,7 @@ a {
   outline: none;
   display: inline-flex;
   align-items: center;
-  jusify-content: center;
+  justify-content: center;
   border-style: none;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
