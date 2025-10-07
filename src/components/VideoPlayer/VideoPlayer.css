@@ -1,0 +1,34 @@
+.video-player {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+  }
+  
+  .video-player video {
+    width: 90%;
+    max-width: 900px;
+    border: 4px solid #fff;
+    border-radius: 20px;
+    transform: scale(0.8);
+    transition: transform 0.4s ease;
+  }
+  
+  .video-player.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .video-player.active video {
+    transform: scale(1);
+  }
+  

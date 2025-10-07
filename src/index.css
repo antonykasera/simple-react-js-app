@@ -33,6 +33,7 @@ a {
   display: inline-flex;
   align-items: center;
   jusify-content: center;
+  border-style: none;
 }
 .btn img {
   width: 20px;
@@ -48,12 +49,12 @@ a {
   color: #fff;
 }
 /* Media Query */
-@media (max-width:1200px){
-  .container{
-    padding-left:5%;
-    padding-right:5%;
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
   }
-  .btn{
-    padding:14px 22px;
+  .btn {
+    padding: 14px 22px;
   }
 }

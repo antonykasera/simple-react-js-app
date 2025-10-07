@@ -44,13 +44,16 @@ nav ul li {
   nav ul {
     position: fixed;
     top: 0;
-    right:0px;
-    bottom: 0;
+    right: 0px;
+    bottom: auto;
     background: #212ea0;
     z-index: -1;
     width: 200px;
     padding-top: 70px;
     transition: 0.5s;
+    margin-top: 0;
+    border-radius: 10px;
+    margin-right: 0px;
   }
   nav ul li {
     display: block;
@@ -58,11 +61,14 @@ nav ul li {
   }
   .menu-icon {
     display: block;
-    width:30px;
-    cursor:pointer;
+    width: 30px;
+    cursor: pointer;
   }
 
-  .hide-mobile-menu{
+  .hide-mobile-menu {
     right: -200px;
+  }
+  .nav ul li button {
+    padding: 10px 20px;
   }
 }

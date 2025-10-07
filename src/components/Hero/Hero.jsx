@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Ensuring better education for a better world</h1>
         <p>
-          Welcome to Strathmore University, where innovation meets excellence. We nurture future
+          Welcome to Edusity, where innovation meets excellence. We nurture future
           leaders through world-class education and values-driven learning. Join us and shape a
           brighter tomorrow.
         </p>
