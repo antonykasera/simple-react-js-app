@@ -8,36 +8,36 @@ import location_icon from "../../assets/location-icon.png";
 import white_arrow from "../../assets/white-arrow.png";
 
 const Contact = () => {
-    const [result, setResult] = React.useState("");
+  const [result, setResult] = React.useState("");
 
-    const onSubmit = async (event) => {
-      event.preventDefault();
-      setResult("Sending....");
-      const formData = new FormData(event.target);
-  
-      formData.append("access_key", "e76710f6-3ca0-415d-8bb7-c04f7d898ff2");
-  
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData
-      });
-  
-      const data = await response.json();
-  
-      if (data.success) {
-        setResult("Form Submitted Successfully");
-        event.target.reset();
-      } else {
-        console.log("Error", data);
-        setResult(data.message);
-      }
-    };
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "b25fec09-374e-40af-96e1-e988c6b4e547");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
 
   return (
     <div className="contact">
       <div className="contact-col">
         <h3>
-          Send Us A Message <img src={msg_icon} alt=""loading="lazy" />
+          Send Us A Message <img src={msg_icon} alt="" loading="lazy" />
         </h3>
         <p>Feel free to reach out with any inquiries, questions, feedback, or suggestions</p>
         <ul>
